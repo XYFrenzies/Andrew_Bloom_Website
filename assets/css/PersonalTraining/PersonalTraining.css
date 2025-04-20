@@ -34,6 +34,12 @@
       margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
       color: var(--bodyTextColorWhite);
     }
+    #services-1847 .cs-text {
+      /* 28px - 44px */
+      margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+      color: var(--bodyTextColorWhite);
+    }
+
     #services-1847 .cs-ul {
       list-style: none;
       width: 100%;
@@ -61,6 +67,7 @@
     #services-1847 .cs-link:hover .cs-icon {
       transform: scale(1.2);
     }
+
     #services-1847 .cs-h3 {
       /* 20px - 25px */
       font-size: clamp(1.25rem, 2vw, 1.5625rem);
@@ -158,5 +165,11 @@
     }
     #services-1847 .cs-picture2 {
       height: 59.54323%;
+    }
+    #services-1847 .cs-title h5{
+      color: var(--bodyTextColorWhite);
+    }
+    #services-1847 .cs-text {
+      color: var(--bodyTextColorWhite);
     }
   }
