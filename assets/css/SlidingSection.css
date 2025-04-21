@@ -1,0 +1,72 @@
+/*-- -------------------------- -->
+<---      Sliding Section       -->
+<--- -------------------------- -*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Inter", sans-serif; 
+}
+
+.cs-cardList .cs-card-item {
+    list-style: none;
+}
+
+.cs-cardList .cs-card-item .cs-card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.cs-cardList .cs-card-item .cs-card-link:hover {
+    border-color: #5372f0;
+}
+
+.cs-cardList .cs-card-item .cs-card-image {
+    width: 25%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.cs-cardList .cs-card-link .cs-NameReviewer {
+    color: blue;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.cs-cardList .cs-card-link .cs-card-title {
+    font-size: 0.75rem;
+    color: #000;
+}
+
+.cs-cardList .cs-card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 2px solid #5372f0;
+}
+
+.cs-cardList .cs-card-link:hover .card-button {
+    color: #fff;
+    background: #5372f0;
+}

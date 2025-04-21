@@ -4,172 +4,599 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1847 {
-      padding: var(--sectionPadding);
-      background-color: #222222;
-    }
-    #services-1847 .cs-container {
-      width: 100%;
-      /* changes to 1280px at desktop */
-      max-width: 34.375rem;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
-    }
-    #services-1847 .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: center;
-      width: 100%;
-      max-width: 33.875rem;
-      display: flex;
-      flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
-      align-items: center;
-    }
-    #services-1847 .cs-title {
-      /* 28px - 44px */
-      margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
-      color: var(--bodyTextColorWhite);
-    }
-    #services-1847 .cs-text {
-      /* 28px - 44px */
-      margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
-      color: var(--bodyTextColorWhite);
-    }
-
-    #services-1847 .cs-ul {
-      list-style: none;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    #services-1847 .cs-li {
-      width: 100%;
-      border-bottom: 1px solid #767676;
-    }
-    #services-1847 .cs-link {
-      text-decoration: none;
-      padding: 1.25rem 0;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    #services-1847 .cs-link:hover .cs-h3 {
-      color: var(--primary);
-    }
-    #services-1847 .cs-link:hover .cs-icon {
-      transform: scale(1.2);
-    }
-
-    #services-1847 .cs-h3 {
-      /* 20px - 25px */
-      font-size: clamp(1.25rem, 2vw, 1.5625rem);
-      font-weight: 700;
-      line-height: 1.2em;
-      text-transform: uppercase;
-      margin: 0;
-      color: var(--bodyTextColorWhite);
-      transition: color 0.3s;
-    }
-    #services-1847 .cs-icon {
-      width: 2rem;
-      height: auto;
-      display: block;
-      transition: transform 0.3s;
-      transform-origin: bottom left;
-    }
-    #services-1847 .cs-image-group {
-      /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
-      font-size: min(2.235vw, .8em);
-      width: 39.375em;
-      height: 38.3125em;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
-    #services-1847 .cs-picture {
-      position: absolute;
-    }
-    #services-1847 .cs-picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    #services-1847 .cs-picture1 {
-      width: 25.8125em;
-      height: 33.75em;
-      top: 0;
-      left: 0;
-    }
-    #services-1847 .cs-picture2 {
-      width: 19.0625em;
-      height: 22.8125em;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
-    }
-    #services-1847 .cs-floater {
-      /* 62px - 120px */
-      width: clamp(3.875rem, 14vw, 7.5rem);
-      height: clamp(3.875rem, 14vw, 7.5rem);
-      background-color: #222222;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 34%;
-      left: 57%;
-      z-index: 10;
-      transform: translate(-50%);
-    }
-    #services-1847 .cs-floater-icon {
-      /* 32px - 60px */
-      width: clamp(2rem, 4.6vw, 3.75rem);
-      height: auto;
-      display: block;
-    }
+  #FirstPageService {
+    background-color: #2a2929;
   }
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48rem) {
-    #services-1847 .cs-container {
-      max-width: 80rem;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-    }
-    #services-1847 .cs-content {
-      text-align: left;
-      padding: 3.25rem 0;
-      align-items: flex-start;
-      align-self: center;
-    }
-    #services-1847 .cs-image-group {
-      font-size: min(1.265vw, 1rem);
-      height: auto;
-      min-height: 38.3125em;
-      flex: none;
-    }
-    #services-1847 .cs-picture1 {
-      height: 88.091354%;
-    }
-    #services-1847 .cs-picture2 {
-      height: 59.54323%;
-    }
-    #services-1847 .cs-title h5{
-      color: var(--bodyTextColorWhite);
-    }
-    #services-1847 .cs-text {
-      color: var(--bodyTextColorWhite);
-    }
+
+  #SecondPageService {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#eceffe, #ced6fb);
   }
+
+  #ThirdPageService {
+    padding: var(--sectionPadding);
+    background-color: #2a2929;
+  }
+
+  /*<---      First Page     -->*/
+  #FirstPageService .cs-servicecontainer {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #FirstPageService .cs-servicecontent {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #FirstPageService .cs-servicetitle {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--primary);
+  }
+
+  #FirstPageService .cs-servicetopper {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #FirstPageService .cs-servicetext {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 2vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #FirstPageService .cs-serviceul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #FirstPageService .cs-serviceli {
+    width: 100%;
+    border-bottom: 1px solid #767676;
+  }
+
+  #FirstPageService .cs-servicelink {
+    text-decoration: none;
+    padding: 1.25rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #FirstPageService .cs-servicelink:hover .cs-h3 {
+    color: var(--primary);
+  }
+
+  #FirstPageService .cs-servicelink:hover .cs-icon {
+    transform: scale(1.2);
+  }
+
+  #FirstPageService .cs-serviceh3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+
+  #FirstPageService .cs-serviceicon {
+    width: 2rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    transform-origin: bottom left;
+  }
+
+  #FirstPageService .cs-serviceimage-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
+    font-size: min(2.235vw, .8em);
+    width: 39.375em;
+    height: 38.3125em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #FirstPageService .cs-servicepicture {
+    position: absolute;
+  }
+
+  #FirstPageService .cs-servicepictureimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #FirstPageService .cs-servicepicture1 {
+    width: 25.8125em;
+    height: 33.75em;
+    top: 0;
+    left: 0;
+  }
+
+  #FirstPageService .cs-servicepicture2 {
+    width: 19.0625em;
+    height: 22.8125em;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  #FirstPageService .cs-servicefloater {
+    /* 62px - 120px */
+    width: clamp(3.875rem, 14vw, 7.5rem);
+    height: clamp(3.875rem, 14vw, 7.5rem);
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34%;
+    left: 57%;
+    z-index: 10;
+    transform: translate(-50%);
+  }
+
+  #FirstPageService .cs-servicefloater-icon {
+    /* 32px - 60px */
+    width: clamp(2rem, 4.6vw, 3.75rem);
+    height: auto;
+    display: block;
+  }
+
+  /*<---      Second Page     -->*/
+
+  #SecondPageService .cs-servicecontainer {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #SecondPageService .cs-servicecontent {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #SecondPageService #SecondPageService .cs-servicetitle {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--primary);
+  }
+
+  #SecondPageService #SecondPageService .cs-servicetopper {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #SecondPageService #SecondPageService .cs-servicetext {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #SecondPageService .cs-serviceul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #SecondPageService .cs-serviceli {
+    width: 100%;
+    border-bottom: 1px solid #767676;
+  }
+
+  #SecondPageService .cs-servicelink {
+    text-decoration: none;
+    padding: 1.25rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #SecondPageService .cs-servicelink:hover .cs-h3 {
+    color: var(--primary);
+  }
+
+  #SecondPageService .cs-servicelink:hover .cs-icon {
+    transform: scale(1.2);
+  }
+
+  #SecondPageService .cs-serviceh3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+
+  #SecondPageService .cs-serviceicon {
+    width: 2rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    transform-origin: bottom left;
+  }
+
+  #SecondPageService .cs-serviceimage-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
+    font-size: min(2.235vw, .8em);
+    width: 39.375em;
+    height: 38.3125em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #SecondPageService .cs-servicepicture {
+    position: absolute;
+  }
+
+  #SecondPageService .cs-servicepictureimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #SecondPageService .cs-servicepicture1 {
+    width: 25.8125em;
+    height: 33.75em;
+    top: 0;
+    left: 0;
+  }
+
+  #SecondPageService .cs-servicepicture2 {
+    width: 19.0625em;
+    height: 22.8125em;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  #SecondPageService .cs-servicefloater {
+    /* 62px - 120px */
+    width: clamp(3.875rem, 14vw, 7.5rem);
+    height: clamp(3.875rem, 14vw, 7.5rem);
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34%;
+    left: 57%;
+    z-index: 10;
+    transform: translate(-50%);
+  }
+
+  #SecondPageService .cs-servicefloater-icon {
+    /* 32px - 60px */
+    width: clamp(2rem, 4.6vw, 3.75rem);
+    height: auto;
+    display: block;
+  }
+
+  /*<---      Third Page     -->*/
+
+  #ThirdPageService .cs-servicecontainer {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #ThirdPageService .cs-servicecontent {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #ThirdPageService #ThirdPageService .cs-servicetitle {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--primary);
+  }
+
+  #ThirdPageService #ThirdPageService .cs-servicetopper {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #ThirdPageService #ThirdPageService .cs-servicetext {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #ThirdPageService .cs-serviceul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #ThirdPageService .cs-serviceli {
+    width: 100%;
+    border-bottom: 1px solid #767676;
+  }
+
+  #ThirdPageService .cs-servicelink {
+    text-decoration: none;
+    padding: 1.25rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #ThirdPageService .cs-servicelink:hover .cs-h3 {
+    color: var(--primary);
+  }
+
+  #ThirdPageService .cs-servicelink:hover .cs-icon {
+    transform: scale(1.2);
+  }
+
+  #ThirdPageService .cs-serviceh3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+
+  #ThirdPageService .cs-serviceicon {
+    width: 2rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    transform-origin: bottom left;
+  }
+
+  #ThirdPageService .cs-serviceimage-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
+    font-size: min(2.235vw, .8em);
+    width: 39.375em;
+    height: 38.3125em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #ThirdPageService .cs-servicepicture {
+    position: absolute;
+  }
+
+  #ThirdPageService .cs-servicepictureimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #ThirdPageService .cs-servicepicture1 {
+    width: 25.8125em;
+    height: 33.75em;
+    top: 0;
+    left: 0;
+  }
+
+  #ThirdPageService .cs-servicepicture2 {
+    width: 19.0625em;
+    height: 22.8125em;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  #ThirdPageService .cs-servicefloater {
+    /* 62px - 120px */
+    width: clamp(3.875rem, 14vw, 7.5rem);
+    height: clamp(3.875rem, 14vw, 7.5rem);
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34%;
+    left: 57%;
+    z-index: 10;
+    transform: translate(-50%);
+  }
+
+  #ThirdPageService .cs-servicefloater-icon {
+    /* 32px - 60px */
+    width: clamp(2rem, 4.6vw, 3.75rem);
+    height: auto;
+    display: block;
+  }
+
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #FirstPageService .cs-servicecontainer {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #FirstPageService .cs-servicecontent {
+    text-align: left;
+    padding: 3.25rem 0;
+    align-items: flex-start;
+    align-self: center;
+  }
+
+  #FirstPageService .cs-serviceimage-group {
+    font-size: min(1.265vw, 1rem);
+    height: auto;
+    min-height: 38.3125em;
+    flex: none;
+  }
+
+  #FirstPageService .cs-servicepicture1 {
+    height: 88.091354%;
+  }
+
+  #FirstPageService .cs-servicepicture2 {
+    height: 59.54323%;
+  }
+
+  #FirstPageService .cs-servicetitle h5 {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #FirstPageService .cs-servicetext {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #SecondPageService .cs-servicecontainer {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #SecondPageService .cs-servicecontent {
+    text-align: left;
+    padding: 3.25rem 0;
+    align-items: flex-start;
+    align-self: center;
+  }
+
+  #SecondPageService .cs-serviceimage-group {
+    font-size: min(1.265vw, 1rem);
+    height: auto;
+    min-height: 38.3125em;
+    flex: none;
+  }
+
+  #SecondPageService .cs-servicepicture1 {
+    height: 88.091354%;
+  }
+
+  #SecondPageService .cs-servicepicture2 {
+    height: 59.54323%;
+  }
+
+  #SecondPageService .cs-servicetitle h5 {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #SecondPageService .cs-servicetext {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #ThirdPageService .cs-servicecontainer {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #ThirdPageService .cs-servicecontent {
+    text-align: left;
+    padding: 3.25rem 0;
+    align-items: flex-start;
+    align-self: center;
+  }
+
+  #ThirdPageService .cs-serviceimage-group {
+    font-size: min(1.265vw, 1rem);
+    height: auto;
+    min-height: 38.3125em;
+    flex: none;
+  }
+
+  #ThirdPageService .cs-servicepicture1 {
+    height: 88.091354%;
+  }
+
+  #ThirdPageService .cs-servicepicture2 {
+    height: 59.54323%;
+  }
+
+  #ThirdPageService .cs-servicetitle h5 {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #ThirdPageService .cs-servicetext {
+    color: var(--bodyTextColorWhite);
+  }
+}

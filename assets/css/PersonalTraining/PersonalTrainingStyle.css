@@ -1,6 +1,6 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
+    --primary: #69be30;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -25,7 +25,7 @@ body {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
-.cs-topper {
+.cs-servicetopper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -37,7 +37,7 @@ body {
     display: block;
 }
 
-.cs-title {
+.cs-servicetitle {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -48,7 +48,7 @@ body {
     position: relative;
 }
 
-.cs-text {
+.cs-servicetext {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: inherit;
