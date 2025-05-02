@@ -124,9 +124,6 @@
     z-index: 1;
   }
 
-  #FirstPageService .cs-servicepicture {
-    position: absolute;
-  }
 
   #FirstPageService .cs-servicepictureimg {
     width: 100%;
@@ -138,41 +135,30 @@
   }
 
   #FirstPageService .cs-servicepicture1 {
-    width: 25.8125em;
-    height: 33.75em;
     top: 0;
     left: 0;
   }
 
   #FirstPageService .cs-servicepicture2 {
-    width: 19.0625em;
-    height: 22.8125em;
-    right: 0;
+    right: 1;
     bottom: 0;
-    z-index: 10;
+  }
+  #FirstPageService .cs-servicepicture3 {
+    position: relative;
+    left: 0;
+    bottom: 0;
   }
 
   #FirstPageService .cs-servicefloater {
     /* 62px - 120px */
-    width: clamp(3.875rem, 14vw, 7.5rem);
-    height: clamp(3.875rem, 14vw, 7.5rem);
-    background-color: #222222;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 34%;
-    left: 57%;
+    top: 44%;
+    left: 45%;
     z-index: 10;
     transform: translate(-50%);
-  }
-
-  #FirstPageService .cs-servicefloater-icon {
-    /* 32px - 60px */
-    width: clamp(2rem, 4.6vw, 3.75rem);
-    height: auto;
-    display: block;
   }
 
   /*<---      Second Page     -->*/
@@ -305,29 +291,6 @@
     right: 0;
     bottom: 0;
     z-index: 10;
-  }
-
-  #SecondPageService .cs-servicefloater {
-    /* 62px - 120px */
-    width: clamp(3.875rem, 14vw, 7.5rem);
-    height: clamp(3.875rem, 14vw, 7.5rem);
-    background-color: #222222;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 34%;
-    left: 57%;
-    z-index: 10;
-    transform: translate(-50%);
-  }
-
-  #SecondPageService .cs-servicefloater-icon {
-    /* 32px - 60px */
-    width: clamp(2rem, 4.6vw, 3.75rem);
-    height: auto;
-    display: block;
   }
 
   /*<---      Third Page     -->*/
@@ -464,10 +427,6 @@
 
   #ThirdPageService .cs-servicefloater {
     /* 62px - 120px */
-    width: clamp(3.875rem, 14vw, 7.5rem);
-    height: clamp(3.875rem, 14vw, 7.5rem);
-    background-color: #222222;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,13 +435,6 @@
     left: 57%;
     z-index: 10;
     transform: translate(-50%);
-  }
-
-  #ThirdPageService .cs-servicefloater-icon {
-    /* 32px - 60px */
-    width: clamp(2rem, 4.6vw, 3.75rem);
-    height: auto;
-    display: block;
   }
 
 }
