@@ -1,5 +1,10 @@
   /* Desktop - 1024px */
   
+  html
+  {
+      scroll-behavior: smooth;
+  }
+
     #cs-navigation .cs-dropdown {
       position: relative;
     }
@@ -355,6 +360,18 @@
     }
     #cs-navigation .cs-top-social-Mobile {
       display: none;
+    }
+
+    @keyframes scroll
+    {
+        from
+        {
+            transform: translate(0);
+        }
+        to
+        {
+            transform: translateX(-200%)
+        }
     }
   
                                   
