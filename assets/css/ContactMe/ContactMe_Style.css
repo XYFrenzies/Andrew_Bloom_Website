@@ -5,7 +5,7 @@
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
-    --bodyTextColorContact: #4e4b66;
+    --bodyTextColorContact: #fafbfc;
     --bodyTextColorWhiteContact: #fafbfc;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);

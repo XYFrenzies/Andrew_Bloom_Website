@@ -360,12 +360,12 @@
     align-items: center;
   }
 
-  #ThirdPageService .cs-servicelink:hover .cs-h3 {
-    color: var(--primary);
+  #ThirdPageService .cs-link {
+    text-decoration: none;
   }
 
-  #ThirdPageService .cs-servicelink:hover .cs-icon {
-    transform: scale(1.2);
+  #ThirdPageService .cs-servicelink:hover .cs-serviceh3 {
+    color: var(--primary);
   }
 
   #ThirdPageService .cs-serviceh3 {
@@ -377,14 +377,16 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
     transition: color 0.3s;
+    transition: all 0.15s ease-in-out 0s;
   }
 
-  #ThirdPageService .cs-serviceicon {
-    width: 2rem;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
-    transform-origin: bottom left;
+  #ThirdPageService .cs-serviceh3:hover {
+    transform: scale(1.2);
+    transition: all 0.15s ease-in-out 0s;
+  }
+
+  #ThirdPageService .cs-servicelink .cs-icon {
+    transform: rotate(-90deg);
   }
 
   #ThirdPageService .cs-serviceimage-group {

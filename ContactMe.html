@@ -103,7 +103,7 @@
 <!-- ============================================ -->
 <!--                 Contact Info                 -->
 <!-- ============================================ -->
-
+<body>
 <section id="contact-1750">
     <div class="cs-container">
         <div class="cs-form-group">
@@ -112,25 +112,32 @@
                 <h2 class="cs-title">Contact Us</h2>
             </div>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST" class="cs-form" id="cs-form-1750" name="Contact Form">
+
+                <input type="hidden" name="access_key" value="dba797a9-1b3d-48fd-83da-4adbc10d28b5">
+
                 <label class="cs-label">
-                    Name *
-                    <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="John Doe">
+                    Name*
+                    <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="Name">
                 </label>
                 <label class="cs-label cs-email">
-                    Email *
-                    <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@company.com">
+                    Email*
+                    <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="Email Address">
                 </label>
                 <label class="cs-label cs-phone">
-                    Phone *
-                    <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (206) 987-6543">
+                    Mobile*
+                    <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="Mobile Number">
                 </label>
                 <label class="cs-label">
-                    Message *
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I am interested..."></textarea>
+                    Message*
+                    <textarea class="cs-input cs-textarea" required name="message" id="message-1750" placeholder="Message to Andrew"></textarea>
                 </label>
+                
+                <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
+
                 <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
             </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </div>
         <!--Contact Info-->
         <div class="cs-info-group">
@@ -153,5 +160,24 @@
         }
     </style>
 
+
+<script>
+    const form = document.getElementById('cs-form-1750');
+    
+    form.addEventListener('submit', function(e) {
+    
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+</script>
 </section>
+
+
+
+</body>
 
