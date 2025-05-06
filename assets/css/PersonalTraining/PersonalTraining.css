@@ -3,7 +3,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+
   #FirstPageService {
     background-color: #2a2929;
   }
@@ -439,10 +439,10 @@
     transform: translate(-50%);
   }
 
-}
+
 
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+
   #FirstPageService .cs-servicecontainer {
     max-width: 80rem;
     flex-direction: row;
@@ -553,4 +553,3 @@
   #ThirdPageService .cs-servicetext {
     color: var(--bodyTextColorWhite);
   }
-}
