@@ -1,9 +1,22 @@
-  /* Desktop - 1024px */
-  
-  html
-  {
-      scroll-behavior: smooth;
-  }
+html
+{
+    scroll-behavior: smooth;
+}
+
+@keyframes scroll
+{
+    from
+    {
+        transform: translate(0);
+    }
+    to
+    {
+        transform: translateX(-200%)
+    }
+}
+ 
+ /* Desktop - 1024px */
+  @media only screen and (min-width: 768px) {
 
     #cs-navigation .cs-dropdown {
       position: relative;
@@ -61,21 +74,6 @@
       display: block;
       transform: translateY(-0.625rem);
       transition: opacity .6s, transform .6s;
-    }
-    #cs-navigation .cs-social-facebook {
-      width: 1.55rem;
-      height: auto;
-      display: block;
-    }
-    #cs-navigation .cs-social-twitter {
-      width: 1.55rem;
-      height: auto;
-      display: block;
-    }
-    #cs-navigation .cs-social-instagram {
-      width: 1.55rem;
-      height: auto;
-      display: block;
     }
     
     #cs-navigation .cs-drop-li:nth-of-type(1) {
@@ -239,16 +237,19 @@
       width: 1.55rem;
       height: auto;
       display: block;
+      box-sizing: border-box;
     }
     #cs-navigation .cs-social-twitter {
       width: 1.55rem;
       height: auto;
       display: block;
+      box-sizing: border-box;
     }
     #cs-navigation .cs-social-instagram {
       width: 1.55rem;
       height: auto;
       display: block;
+      box-sizing: border-box;
     }
 
     #cs-navigation .cs-container {
@@ -361,17 +362,165 @@
     #cs-navigation .cs-top-social-Mobile {
       display: none;
     }
+    #cs-navigation .cs-ul-wrapper {
+      display: block;
+    }
 
-    @keyframes scroll
+    #cs-navigation .cs-h1
     {
-        from
-        {
-            transform: translate(0);
-        }
-        to
-        {
-            transform: translateX(-200%)
-        }
+      display: block;
+    }
+    #cs-navigation .cs-h3
+    {
+      display: none;
+    }
+  }
+
+  /* Mobile - 22.500em */
+    @media only screen and (max-width: 768px) {
+
+      #cs-navigation .cs-h1
+      {
+        display: none;
+      }
+      #cs-navigation .cs-h3
+      {
+        display: block;
+      }
+
+      #cs-navigation .cs-top-social-Mobile {
+        display: flex;
+      }
+      #cs-navigation .cs-ul-wrapper {
+        display: none;
+      }
+      
+      #cs-navigation {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+
+        width: 100%;
+        padding: 0;
+        /* prevents padding from affecting height and width */
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.63);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        z-index: 10000;
+        transition: transform .3s;
+      }
+      
+      #cs-navigation #HamburgerDropDown {
+        display: none;
+      }
+
+      #cs-navigation a.cs-nav-button
+      {
+        display: none;
+      }
+
+      #cs-navigation .cs-top-social-Mobile a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      #cs-navigation .cs-top-social-Mobile a.icon {
+        background: var(--primary);
+        display: block;
+      }
+
+      #cs-navigation .cs-top-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      #cs-navigation .cs-social-link {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #cs-navigation .cs-social-facebook {
+        width: 1.55rem;
+        height: auto;
+        display: flex;
+      }
+      #cs-navigation .cs-social-twitter {
+        width: 1.55rem;
+        height: auto;
+        display: flex;
+      }
+      #cs-navigation .cs-social-instagram {
+        width: 1.55rem;
+        height: auto;
+        display: flex;
+      }
+
+      #cs-navigation .cs-top-social-Mobile a:hover {
+        color: var(--bodyTextColor);
+        background-color: var(--primary);        
+      }
+
+      #cs-navigation .cs-top-social-Mobile .dropdown-menu
+      {
+        display: none;
+      }
+
+      #cs-navigation .cs-top-social-Mobile .dropdown-menu:hover
+      {
+        display: block;
+        transition: all 0.15s ease-in-out 0s;
+      }
+
+
+      #cs-navigation .dropdown-toggle:hover + .dropdown-menu{
+        display: block;
+        transition: all 0.15s ease-in-out 0s;
+      }
+  
+      #cs-navigation .dropdown-menu a
+      {
+        font-size: 0.875rem;
+      }
+
+      #cs-navigation .dropdown-menu
+      {
+        background-color: #333;
+      }
+
+      #cs-navigation .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        padding: 0 1rem;
+        /* prevents padding from affectin gheight */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+      }
+      #cs-navigation .cs-logo {
+        /* 40px - 44px */
+        height: clamp(2.5rem, 4vw, 2.75rem);
+        /* margin-right auto pushes everything away from it to the right */
+        margin: 0 auto 0 0;
+        padding: 0;
+        display: flex;
+        overflow: visible;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        color: var(--primary);
+  
+      }
     }
   
                                   

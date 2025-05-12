@@ -3,7 +3,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-
+@media only screen and (min-width: 0px) {
   #FirstPageService {
     background-color: #2a2929;
   }
@@ -255,16 +255,6 @@
     transform-origin: bottom left;
   }
 
-  #SecondPageService .cs-serviceimage-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
-    font-size: min(2.235vw, .8em);
-    width: 39.375em;
-    height: 38.3125em;
-    display: block;
-    position: relative;
-    z-index: 1;
-  }
-
   #SecondPageService .cs-servicepicture {
     position: absolute;
   }
@@ -494,13 +484,6 @@
     align-self: center;
   }
 
-  #SecondPageService .cs-serviceimage-group {
-    font-size: min(1.265vw, 1rem);
-    height: auto;
-    min-height: 38.3125em;
-    flex: none;
-  }
-
   #SecondPageService .cs-servicepicture1 {
     height: 88.091354%;
   }
@@ -553,3 +536,23 @@
   #ThirdPageService .cs-servicetext {
     color: var(--bodyTextColorWhite);
   }
+}
+
+@media only screen and (max-width: 768px) 
+{
+  #FirstPageService .cs-servicefloater {
+    display: none;
+  }
+  #ThirdPageService .cs-servicepicture1 {
+    top: auto;
+    left: auto;
+  }
+
+  #ThirdPageService .cs-servicepicture2 {
+    display: none;
+  }
+
+  #ThirdPageService .cs-servicefloater {
+    display: none;
+  }
+}
